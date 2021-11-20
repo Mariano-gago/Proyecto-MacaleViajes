@@ -1,0 +1,277 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+
+
+/*Header*/
+
+header{
+    background-color: #E5E8E8;
+}
+
+
+.text{
+    margin-top: 20%;
+    border: 2px solid #fff;
+    color: #fff;
+
+}
+
+h1 {
+    opacity: 0;
+    animation: 5s;
+    animation-name: textAnimation;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.nav-link{
+    color: black;
+}
+
+.icon-wp{
+    height: 3em;
+    width: 2em;
+    margin: 10px;
+}
+/* end header*/
+
+/*start main - promos */
+
+.titlePromo{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.margin{
+    margin-right: 1em;
+}
+/* End MAIN*/
+
+/*Start card*/
+.card{
+    margin-bottom: 1.2em;
+    transition: transform .4s;
+}
+.card__hover:hover{
+    box-shadow: 0 0 10px rgb(160, 158, 158);
+    transform: scale(1.1);
+}
+
+.card-body{
+    text-align: center;
+    
+}
+.textBtn{
+    color: blue;
+    font-size: 1em;
+    text-align: center;
+}
+
+.featured {
+    margin: 4rem 0 0 0;
+}
+/* End Card*/
+
+
+
+
+/*Start Footer*/
+
+footer{
+    background-color: #E5E8E8;
+}
+
+
+.footer__flex{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.footer__flex img{
+    width: 2em;
+    height: 2em;
+    margin: 10px;
+}
+
+.footer__title{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+    text-shadow:5px 5px 5px grey;
+}
+
+.marca{
+    text-decoration: none;
+    font-size: 3em;
+    font-weight: 400;
+    color:black ;
+    font-family: 'Ephesis', cursive;
+}
+/*End Footer*/
+
+
+/* Seccion "Nosotros"*/
+
+.background__nos{
+    background-color:white;
+}
+
+/* End Section "Nosotros"*/
+
+
+
+
+/*Start Section "nacionales"*/
+
+.title__previaje{
+    margin-bottom: 0px;
+}
+
+.card__border {
+    border:2px double red;
+}
+
+
+
+
+.card__descripcion{
+    list-style: square;
+    height: auto;
+    text-align: left;
+    border-bottom: 2px solid red;
+    font-size: 1em;
+}
+.card__descripcion p{
+    margin-bottom: .3em;
+}
+
+.img__ushuaia{
+    height: 300px;
+    width:400px;
+}
+
+.btn-consulta{
+    margin-top: 1em;
+}
+
+
+
+
+
+/*Contacto*/
+
+.title-contacto{
+    text-align: center;
+}
+
+.form__contacto{
+    
+    margin-left: 200px;
+}
+.form__custom{
+    border: 2px double grey;
+}
+.form-control{
+    margin-bottom: 10px;
+}
+.form__input{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 750px) {
+    
+    .form__contacto{
+        margin-left: 0px;
+    }
+}
+
+
+
+/*Validar contacto*/
+
+.success{
+    border: 2px solid #53f566;
+}
+
+.error{
+    border: 2px solid #f04434;
+}
+.error__msje{
+    background-color: #f04434;
+    color: white;
+}
+.not-allowed{
+    opacity: 0.4;
+    
+}
+
+.allowed{
+    opacity: none;
+}
+
+
+/* Nacionales*/
+
+#input {
+    background-color: var(--search-box-bg, white);
+    border: 2px solid #000;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.titulo{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 1.7em;
+    }
+
+.paquete{
+    position: absolute;
+    top: 100px;
+    color:white;
+    display: flex;
+    margin-top: 4em;
+    
+}
+
+.paquete .precio__info{
+    margin-left: 2em;
+    background-color: rgba(0,0,0,0.6);
+}
