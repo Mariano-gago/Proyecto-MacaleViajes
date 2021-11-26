@@ -10,43 +10,13 @@ const arrayInputs = [];
 
 arrayInputs.push(tituloNombreCiudad, inputTraslado, inputAlojamiento, inputExcursion, inputPasajes, inputInfo);
 console.log(arrayInputs);
-/* console.log(tituloNombreCiudad);
-console.log(inputTraslado);
-console.log(inputAlojamiento);
-console.log(inputExcursion);
-console.log(inputPasajes);
-console.log(inputInfo); */
 
-/* class claseEditor{
-    constructor(nombre, traslado, alojamiento, excursion, pasajes, info){
-        this.nombre = nombre;
-        this.traslado = traslado;
-        this.alojamiento = alojamiento;
-        this.excursion = excursion;
-        this.pasajes = pasajes;
-        this.info = info;
+
+const editor = (tituloNombreCiudad, inputTraslado) => {
+
+    class generadorDeObjeto {
+        constructor(tituloCiudad, trasladdo){
+
+        }
     }
 }
-
-const objetoEditor = new claseEditor (tituloNombreCiudad, inputTraslado, inputAlojamiento, inputExcursion, inputPasajes, inputInfo);
-
-console.log(objetoEditor);
-
-objetoEditor.array.forEach(element => {
-    
-}); */
-
-const editar = (e) => {
-    let nombreCiudad = e.target.value;
-    console.log(nombreCiudad);
-}
-
-
-arrayInputs.forEach((input) => {
-    //console.log(input);
-    input.addEventListener("keyup", editar);
-})
-
-
-tituloNombreCiudad.addEventListener("keyup", editar);
-

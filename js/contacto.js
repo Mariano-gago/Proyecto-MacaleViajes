@@ -1,5 +1,5 @@
 // Variables
-const formulario = document.querySelectorAll('.validation');
+const formulario = document.querySelectorAll(".validation");
 const btnEnviar = document.querySelector("#enviar");
 const parrafoError = document.querySelector("#parrafoError");
 
@@ -127,16 +127,6 @@ const enviarFormulario = (e) => {
 
     },3000);
 
-    /* setTimeout(() => {
-        const divMsje = document.querySelector("#divMsje");
-
-        const msjeEnviado = document.createElement("div");
-        msjeEnviado.innerHTML = `
-        <div class="alert alert-success" role="alert">
-            A simple success alert—check it out!
-        </div>`
-        divMsje.appendChild(msjeEnviado)
-    }, 2000) */
 }
 
 btnEnviar.addEventListener("click", enviarFormulario);

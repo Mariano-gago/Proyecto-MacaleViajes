@@ -11,9 +11,6 @@
 
 /*Header*/
 
-header{
-    background-color: #E5E8E8;
-}
 
 
 .text{
@@ -207,6 +204,7 @@ footer{
     .form__contacto{
         margin-left: 0px;
     }
+    
 }
 
 
@@ -236,7 +234,7 @@ footer{
 
 /* Nacionales*/
 
-#input {
+#inputBuscar {
     background-color: var(--search-box-bg, white);
     border: 2px solid #000;
     height: 100%;
