@@ -273,3 +273,10 @@ footer{
     margin-left: 2em;
     background-color: rgba(0,0,0,0.6);
 }
+
+
+.lista-viaje{
+    display: inline-block;
+    margin-left: 40%;
+    border: 2px solid rgb(241, 15, 15);
+}

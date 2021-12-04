@@ -1,5 +1,4 @@
 
-
 // Clase para Cards del Index
 class CardsPrincipal {
 

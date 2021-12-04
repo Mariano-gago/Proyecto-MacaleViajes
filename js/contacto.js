@@ -2,6 +2,8 @@
 const formulario = document.querySelectorAll(".validation");
 const btnEnviar = document.querySelector("#enviar");
 const parrafoError = document.querySelector("#parrafoError");
+const reset = document.querySelector(".reset");
+const btnBorrar = document.querySelector("#borrar")
 
 //Variables para obtener los inputs
 
@@ -12,17 +14,17 @@ const inputTel = document.querySelector("#input-tel");
 const textArea = document.querySelector("#text-area");
 
 
-
-
 //Deshabilito boton de enviar
 btnEnviar.disable = true;
 btnEnviar.classList.add("not-allowed");
 
+//Funcion para resetear el formulario
+const resetFormulario = () => reset.reset()
 
 
 //Valida el formulario
-const validarFormulario = (e) => {
-    //console.log(e);
+const validarFormulario = e => {
+    
     let input = e.target;
     //console.log(input.value);
     if(input.value !== ""){
@@ -70,7 +72,7 @@ const validarFormulario = (e) => {
 
 
 //Muestra el mensaje de error
-const showError = (mensaje) => {
+const showError = mensaje => {
     const mensajeError = document.createElement("p");
     mensajeError.textContent = mensaje ;
     mensajeError.classList.add("error__msje");
@@ -82,16 +84,14 @@ const showError = (mensaje) => {
 }
 
 
-//Agrga el vento a todos los inputs
-formulario.forEach(input => {
-    //input.addEventListener("blur", validar)
-    input.addEventListener("blur", validarFormulario)
-});
+//Agrega el evento a todos los inputs
+formulario.forEach( input =>  input.addEventListener("blur", validarFormulario));
 
 
 
-//Envia el formulario y muestra spinner
-const enviarFormulario = (e) => {
+
+//Envia el formulario, muestra spinner
+const enviarFormulario = e => {
     e.preventDefault();
     //console.log("click");
     const spinner = document.querySelector(".spinner");
@@ -123,12 +123,19 @@ const enviarFormulario = (e) => {
         divMsje.appendChild(msjeEnviado);
         setTimeout(() => {
             msjeEnviado.remove();
-        },2000);
 
+        },2000);
+        resetFormulario();
     },3000);
 
 }
+//console.log(reset);
 
+
+//Boton para borrar el formulario
+btnBorrar.addEventListener("click", ()=> resetFormulario());
+
+//Evento del boton enviar
 btnEnviar.addEventListener("click", enviarFormulario);
 
 

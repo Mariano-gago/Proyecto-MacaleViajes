@@ -4,6 +4,8 @@
 const inputBuscar = document.querySelector("#inputBuscar");
 const resultadoBusqueda = document.querySelector(".resultado-busqueda");
 const ciudadesNacionalesPromos = [];
+const ciudadesIntenacionalesPromos = [];
+
 
 
 
@@ -24,12 +26,18 @@ ciudadesNacionalesPromos.push(new cardsCiudades ("Bariloche", "Paquete 3 noches"
                         new cardsCiudades ("Salta", "Paquete 3 noches", "Desde $50.000", "../imagenes/salta300x200.png"), new cardsCiudades ("Ushuaia", "Paquete 3 noches", "Desde $10.000", "../imagenes/ushuaia300x200.png"),
                         new cardsCiudades ("Tucuman", "Paquete 3 noches", "Desde $10.000", "../imagenes/tucuman300x200.png"),  new cardsCiudades ("Puerto Madryn", "Paquete 3 noches", "Desde $100.000", "../imagenes/puertomadryn300x200.png"), new cardsCiudades ("Mar Del PLata", "Paquete 3 noches", "Desde $90.000", "../imagenes/mardelplata300x200.png"));
 
+ciudadesIntenacionalesPromos.push(new cardsCiudades ("Cancun", "Paquete 7 noches", "Desde $210.000", "../imagenes/bariloche300x200.png"), new cardsCiudades ("Miami", "Paquete 4 noches", "Desde $110.000", "../imagenes/bariloche300x200.png"), 
+                        new cardsCiudades ("Cartagena de Indias", "Paquete 5 noches", "Desde $95.000", "../imagenes/bariloche300x200.png"), new cardsCiudades ("Madrid", "Paquete 3 noches", "Desde $210.000", "../imagenes/bariloche300x200.png"), 
+                        new cardsCiudades ("Roma", "Paquete 3 noches", "Desde $110.000", "../imagenes/bariloche300x200.png"), new cardsCiudades ("Panama", "Paquete 5 noches", "Desde $250.000", "../imagenes/bariloche300x200.png"),
+                        new cardsCiudades ("Grecia", "Paquete 3 noches", "Desde $110.000", "../imagenes/bariloche300x200.png"), new cardsCiudades ("Tailandia", "Paquete 3 noches", "Desde $110.000", "../imagenes/bariloche300x200.png"),
+                        new cardsCiudades ("Berlin", "Paquete 6 noches", "Desde 150.000", "../imagenes/bariloche300x200.png"));
 
 
 
 
 
-const cardsPromosNacionales = (ciudad, elemento) => {
+const cardsPromos = (ciudad, elemento) => {
+    console.log(elemento);
     const divCard = document.querySelector(elemento);
     divCard.innerHTML = ""
     //console.log(divCard);
@@ -57,7 +65,11 @@ const cardsPromosNacionales = (ciudad, elemento) => {
     
 }
 
-cardsPromosNacionales(ciudadesNacionalesPromos, "#cardsNacionales");
+if(window.location.pathname.includes("internacionales")){
+    cardsPromos(ciudadesIntenacionalesPromos , "#cardsInternacionales");
+}else if (window.location.pathname.includes("nacionales")){
+    cardsPromos(ciudadesNacionalesPromos, "#cardsNacionales");
+};
 
 
 
@@ -71,9 +83,11 @@ const filtro = ( e =>{
     //console.log(input);
 
     /* Filtro ciudades por nombre*/
-    let resultado = ciudadesNacionalesPromos.filter( producto => producto.nombre.toLowerCase() == input);
-    
-    cardsFiltrado(resultado);
+    let resultadoNacional = ciudadesNacionalesPromos.filter( producto => producto.nombre.toLowerCase() === input);
+    let resultadoInternacional = ciudadesIntenacionalesPromos.filter(producto => producto.nombre.toLowerCase() === input);
+
+    cardsFiltrado(resultadoNacional);
+    cardsFiltrado(resultadoInternacional);
     
 })
 
@@ -109,4 +123,13 @@ const cardsFiltrado =  (resultado => {
         
 });
 
-inputBuscar.addEventListener("keyup", filtro);
+inputBuscar.addEventListener("input", filtro);
+
+
+
+
+
+
+
+
+
