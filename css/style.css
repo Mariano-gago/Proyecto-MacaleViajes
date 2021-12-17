@@ -7,12 +7,9 @@
 	outline: none;
 }
 
-
-
-/*Header*/
-
-
-
+body{
+    height: 100vh;
+}
 .text{
     margin-top: 20%;
     border: 2px solid #fff;
@@ -89,6 +86,11 @@ h1 {
 .featured {
     margin: 4rem 0 0 0;
 }
+
+.color-btn{
+    background-color: #7B241C !important ;
+    color: white !important;
+}
 /* End Card*/
 
 
@@ -125,7 +127,7 @@ footer{
     text-decoration: none;
     font-size: 3em;
     font-weight: 400;
-    color:black ;
+    color: #7B241C ;
     font-family: 'Ephesis', cursive;
 }
 /*End Footer*/
@@ -232,7 +234,7 @@ footer{
 }
 
 
-/* Nacionales*/
+/* Nacionales e Internacionales*/
 
 #inputBuscar {
     background-color: var(--search-box-bg, white);
@@ -279,4 +281,42 @@ footer{
     display: inline-block;
     margin-left: 40%;
     border: 2px solid rgb(241, 15, 15);
+    background-color: aqua;
+    
+}
+
+/*FIN NACIONALES E INTERNACIONALES*/
+
+/*START ARMA TU VIAJE*/
+
+.background{
+    height: 100vh;
+    background: no-repeat;
+    background-attachment: fixed;
+    border: 2px solid black;
+    background-image: url(../imagenes/hoodh-ahmed-0UAb0KxYiyw-unsplash.jpg);
+}
+
+.titulo-busqueda{
+    margin-top: 10%;
+    background-color: white;
+    color: black;
+}
+
+.buscador{
+    margin-top: 2em;
+    border: 1px solid red;
+    background: white;
+}
+
+.margin{
+    margin-left: 2em;
+}
+
+.check{
+    display: inline-block;
+    margin: 0 0 0.8em 0.8em;
+    background-color: rgb(50, 143, 168, 0.6);
+    
+    
 }

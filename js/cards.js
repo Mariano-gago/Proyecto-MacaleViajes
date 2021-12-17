@@ -49,7 +49,7 @@ const cardsHtml = ((region, elemento) => {
                         <h6 class="card-subtitle mb-2 text-muted">${destino.subtitulo}</h6>
                         <p class="card-text">${destino.texto}</p>
                         <p class="card-text textBtn">${destino.precio}</p>
-                        <a href="#" class="btn btn-primary ">Ver paquete</a>
+                        <a href="#" class="btn color-btn ">Ver paquete</a>
                     </div>
             </div>
         </div>`;

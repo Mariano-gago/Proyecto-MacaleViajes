@@ -36,6 +36,7 @@ const validarFormulario = e => {
         //Agrega las clases de css
         input.classList.add("success");
         input.classList.remove("error");
+    
     }else{
         input.classList.add("error");
         input.classList.remove("success");
@@ -46,7 +47,7 @@ const validarFormulario = e => {
     //Valida el input del email
     if(input.type === "email"){
         const resultado = e.target.value.indexOf("@");
-        //console.log(resultado);
+        console.log(resultado);
         //const resultado = input.value.split("@").length == 2;
 
 
