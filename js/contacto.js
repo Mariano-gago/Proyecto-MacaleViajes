@@ -46,13 +46,13 @@ const validarFormulario = e => {
     }
     //Valida el input del email
     if(input.type === "email"){
-        const resultado = e.target.value.indexOf("@");
-        console.log(resultado);
-        //const resultado = input.value.split("@").length == 2;
+        //const resultado = e.target.value.indexOf("@");
+        const resultado = input.value.split("@").length == 2;
+        //console.log(resultado);
 
 
         //Elimina mensaje de error si hay
-        if(resultado < 0){
+        if(resultado == false){
             const errores = document.querySelector("p.error__msje");
             if(errores){
                 errores.remove()
@@ -64,7 +64,6 @@ const validarFormulario = e => {
             showError("No es un email valido");
         }
     }
-    
     //Habilita el boton de enviar
     if((inputName.value !== "" && inputLastName.value !== "") && (inputTel.value !== "" && inputMail.value !== "") && (textArea.value !=="")){
         btnEnviar.classList.remove("not-allowed");
@@ -115,22 +114,27 @@ const enviarFormulario = e => {
         spinner.innerHTML = "Enviar";
 
         //Se crea un div para mostrar el mensaje de email enviado
-        const divMsje = document.querySelector(".divMsje");
-        const msjeEnviado = document.createElement("div");
+        /* const divMsje = document.querySelector(".divMsje"); */
+        /* const msjeEnviado = document.createElement("div");
         msjeEnviado.innerHTML = `
-        <div class="alert alert-success " role="alert">
+        <div id:"animacion" class="alert alert-success " role="alert">
             Consulta enviada con exito!
         </div>`
-        divMsje.appendChild(msjeEnviado);
+        divMsje.appendChild(msjeEnviado); */
+        $(".divMsje").fadeIn(3000).fadeOut(3000).append(`
+        <div>
+            <div class=" alert alert-success " role="alert">
+                Consulta enviada con exito!
+            </div>
+        </div>`)
         setTimeout(() => {
-            msjeEnviado.remove();
-
-        },2000);
+            //msjeEnviado.remove();
+            $(".clearMsje").remove();
+        },3000);
         resetFormulario();
     },3000);
 
 }
-//console.log(reset);
 
 
 //Boton para borrar el formulario

@@ -1,0 +1,278 @@
+[
+    {
+    "id": "1",
+    "titulo":"Cuzco, Peru",
+    "nombre":"Cuzco",
+    "subtitulo": "Machu Piccu",
+    "texto": "Explora el fascinante mundo Inca",
+    "informacion": "Paquete 3 noches",
+    "imagen" : {
+                "imagen1":"./imagenes/cuzco-peru.jpg",
+                "imagen2": "../imagenes/bariloche300x200.png"
+                }, 
+    "precio": "$85.000",
+    "traslado": "Traslado de llegada y salida",
+    "alojamiento": "03 Noches de alojamiento con desayuno en Hotel Nahuel Huapi",
+    "excursion": "",
+    "region": "Internacional",
+    "promo": "true"
+},
+{
+    "id": "2",
+    "titulo":"Roma, Italia",
+    "nombre":"Roma",
+    "subtitulo": "Imperio Romano",
+    "texto": "Visita el Imperio Romano",
+    "informacion": "Paquete 3 noches",
+    "imagen" : {
+        "imagen1":"./imagenes/roma-italia.jpg",
+        "imagen2": "../imagenes/roma300x200.png"
+    }, 
+    "precio": "100.000",
+    "region": "Internacional",
+    "promo": "true"
+},
+{
+    "id": "3",
+    "titulo":"Cancun, Mexico",
+    "nombre": "Cancun",
+    "subtitulo": "Quintana Roo",
+    "texto": "Todo el caribe Mexicano al mejor precio",
+    "informacion": "Paquete 3 noches",
+    "imagen" : {
+                "imagen1":"./imagenes/cancun.png",
+                "imagen2": "../imagenes/cun300x200.png"
+                },
+    "precio": "$210.000",
+    "region": "Internacional",
+    "promo": "true"
+},
+{
+    "id": "4",
+    "titulo":"Miami, Estados Unidos",
+    "nombre": "Miami",
+    "subtitulo": "Miami Beach",
+    "texto": "Disfruta las Playas",
+    "informacion": "Paquete 7 noches",
+    "imagen" : {
+                "imagen1":"./imagenes/mia.png",
+                "imagen2": "../imagenes/miami300x200.png"
+                },
+    "precio": "$250.000",
+    "region": "Internacional",
+    "promo": "true"
+},
+{
+    "id": "5",
+    "titulo":"Brasil",
+    "nombre": "Rio de Janeiro",
+    "subtitulo": "Rio de Janeiro",
+    "texto": "Disfruta las playas",
+    "informacion": "Paquete 7 noches",
+    "imagen" : {
+                "imagen1":"./imagenes/rio.png",
+                "imagen2": "../imagenes/tai300x200.png"
+                },
+    "precio": "$100.000",
+    "region": "Internacional",
+    "promo": "true"
+},
+{
+    "id": "6",
+    "titulo":"Tailandia",
+    "nombre": "Tailandia",
+    "subtitulo": "Bangkok",
+    "texto": "Mistico",
+    "informacion": "Paquete 12 noches",
+    "imagen" : {
+                "imagen1":"./imagenes/rio.png",
+                "imagen2": "../imagenes/tai300x200.png"
+                },
+    "precio": "$100.000",
+    "region": "Internacional",
+    "promo": "false"
+},
+{
+    "id": "7",
+    "titulo":"San Andres, Colombia",
+    "nombre": "Cartagena de Indias",
+    "subtitulo": "Isla San Andres",
+    "texto": "Descansa en el Caribe",
+    "informacion": "Paquete 5 noches",
+    "imagen" : {
+                "imagen1":"./imagenes/san-andres-colombia.jpg",
+                "imagen2": "../imagenes/cartagena300x200.png"
+                },
+    "precio": "$95.000",
+    "region": "Internacional",
+    "promo": "true"
+},
+{
+    "id": "8",
+    "titulo":"Madrid, España",
+    "nombre": "Madrid",
+    "subtitulo": "",
+    "texto": "Recorre la Gran Capital",
+    "informacion": "Paquete 4 noches",
+    "imagen" : {
+                "imagen1":"./imagenes/san-andres-colombia.jpg",
+                "imagen2": "../imagenes/madrid300x200.png"
+                },
+    "precio": "$210.000",
+    "region": "Internacional",
+    "promo": "False"
+},
+{
+    "id": "9",
+    "titulo":"Panama, Panama",
+    "nombre": "Panama",
+    "subtitulo": "",
+    "texto": "Playas paridisiacas",
+    "informacion": "Paquete 5 noches",
+    "imagen" : {
+                "imagen1":"./imagenes/san-andres-colombia.jpg",
+                "imagen2": "../imagenes/panama300x200.png"
+                },
+    "precio": "$210.000",
+    "region": "Internacional",
+    "promo": "False"
+},
+{
+    "id": "10",
+    "nombre":"Bariloche",
+    "informacion": "Paquete 3 noches",
+    "precio": "$110.000",
+    "imagen" : {
+                "imagen1":"./imagenes/san-andres-colombia.jpg",
+                "imagen2": "../imagenes/bariloche300x200.png"
+                },
+    "traslado": "Traslado de llegada y salida",
+    "alojamiento": "03 Noches de alojamiento con desayuno en Hotel Nahuel Huapi",
+    "excursion": "",
+    "region": "Nacional",
+    "promo": "False"
+},
+{
+    "id": "11",
+    "nombre":"Cataratas del Iguazu",
+    "informacion": "Paquete 3 noches",
+    "precio": "$70.000",
+    "imagen" : {
+                "imagen1":"./imagenes/san-andres-colombia.jpg",
+                "imagen2": "../imagenes/iguazu300x200.png"
+                },
+    "traslado": "Traslado de llegada y salida",
+    "alojamiento": "03 Noches de alojamiento con desayuno en el Sheraton Iguazu",
+    "excursion": "",
+    "region": "Nacional",
+    "promo": "False"
+},
+{
+    "id": "12",
+    "nombre":"Mendoza",
+    "informacion": "Paquete 6 noches",
+    "precio": "$40.000",
+    "imagen" : {
+                "imagen1":"./imagenes/san-andres-colombia.jpg",
+                "imagen2": "../imagenes/mendoza300x200.png"
+                },
+    "traslado": "Traslado de llegada y salida",
+    "alojamiento": "06 Noches en el exclusivo Hotel Las Magnolias",
+    "excursion": "",
+    "region": "Nacional",
+    "promo": "False"
+},
+{
+    "id": "13",
+    "nombre": "Calafate",
+    "informacion": "Paquete 4 noches",
+    "precio": "$60.000",
+    "imagen" : {
+                "imagen1":"./imagenes/san-andres-colombia.jpg",
+                "imagen2": "../imagenes/calafate300x200.png"
+                },
+    "traslado": "Adicional",
+    "alojamiento": "04 Noches en el Hotel Los Hielos",
+    "excursion": "",
+    "region": "Nacional",
+    "promo": "False"
+},
+{
+    "id": "14",
+    "nombre":"Salta",
+    "informacion": "Paquete 7 noches",
+    "precio": "$85.000",
+    "imagen" : {
+                "imagen1":"./imagenes/san-andres-colombia.jpg",
+                "imagen2": "../imagenes/salta300x200.png"
+                },
+    "traslado": "Traslado de llegada y salida",
+    "alojamiento": "04 Noches en Hotel La Linda y 03 noches en El Refugio",
+    "excursion": "",
+    "region": "Nacional",
+    "promo": "False"
+},
+{
+    "id": "15",
+    "nombre":"Ushuaia",
+    "informacion": "Paquete 4 noches",
+    "precio": "$60.000",
+    "imagen" : {
+                "imagen1":"./imagenes/san-andres-colombia.jpg",
+                "imagen2" : "../imagenes/ushuaia300x200.png"
+                },
+    "traslado": "Adicional",
+    "alojamiento": "04 Noches en el Hotel El Fin Del Mundo",
+    "excursion": "",
+    "region": "Nacional",
+    "promo": "False"
+},
+{
+    "id": "16",
+    "nombre":"Tucuman",
+    "informacion": "Paquete 4 noches",
+    "precio": "$50.000",
+    "imagen" : {
+                "imagen1":"./imagenes/san-andres-colombia.jpg",
+                "imagen2" : "../imagenes/tucuman300x200.png"
+                },
+    "traslado": "Ida y vuelta al aeropuerto",
+    "alojamiento": "04 Noches en carpa",
+    "excursion": "",
+    "region": "Nacional",
+    "promo": "False"
+    },
+    {
+    "id": "17",
+    "nombre":"Puerto Madryn",
+    "informacion": "Paquete 4 noches",
+    "precio": "$35.000",
+    "imagen" : {
+                "imagen1":"./imagenes/san-andres-colombia.jpg",
+                "imagen2" : "../imagenes/puertomadryn300x200.png"
+                },
+    "traslado": "Ida y vuelta al aeropuerto",
+    "alojamiento": "04 Noches en Hotel La Ballena",
+    "excursion": "",
+    "region": "Nacional",
+    "promo": "False"
+},
+{
+    "id": "18",
+    "nombre":"Mar Del Plata",
+    "informacion": "Paquete 7 noches",
+    "precio": "$65.000",
+    "imagen" : {
+                "imagen1":"./imagenes/san-andres-colombia.jpg",
+                "imagen2" : "../imagenes/mardelplata300x200.png"
+                },
+    "traslado": "Ida y vuelta al aeropuerto",
+    "alojamiento": "04 Noches en Hotel El Guerrero",
+    "excursion": "",
+    "region": "Nacional",
+    "promo": "False"
+    }
+]
+
+
+
