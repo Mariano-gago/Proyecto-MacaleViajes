@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", db);
 
 //Funcion para recopilar informacion de la base de datos (API)
 function db (){
-    const url = "../db/dataBase.json";
+    const url = "/db/dataBase.json";
 
     fetch(url)
         .then( respuesta => respuesta.json())
         .then( resultado => {
-            //console.log(resultado);
+            console.log(resultado);
             filtro(resultado);
         });
 }
