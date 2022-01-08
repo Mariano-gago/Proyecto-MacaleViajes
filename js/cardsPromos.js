@@ -50,7 +50,7 @@ const cardsPromos = (ciudad, elemento) => {
     //console.log(div);
     div.innerHTML = `
     <div class="col-md-12 mb-4">
-        <a id="${ciudad.id}" class="seleccion" href="#">
+        <a id="${ciudad.id}" class="seleccion" href="../assets/nacionales2.html"">
             <img src="${ciudad.imagen.imagen2}">
             <div class="titulo">
                 <h4>${ciudad.nombre}</h4>
@@ -83,7 +83,8 @@ function filtro (e) {
     fetch(url)
         .then( respuesta => respuesta.json())
         .then( resultado => {
-        //console.log(resultado);
+        console.log(resultado);
+        //prueba(resultado)
         let resultadoNacional = resultado.filter( nombre => nombre.nombre.toLowerCase() === input);
         let resultadoInternacional = resultado.filter( nombre => nombre.nombre.toLowerCase() === input);
         cardsFiltrado(resultadoNacional);
@@ -105,7 +106,7 @@ const cardsFiltrado =  (resultado => {
 
         div.innerHTML = `
             <div class=" col-md-12 mb-4">
-                <a href="../assets/nacionales2.html">
+                <a id="prueba" href="../assets/nacionales2.html">
                     <img src="${item.imagen.imagen2}">
                     <div class="titulo">
                         <h4>${item.nombre}</h4>
@@ -124,7 +125,6 @@ const cardsFiltrado =  (resultado => {
 
 // Evento para el input
 inputBuscar.addEventListener("input", filtro);
-
 
 
 

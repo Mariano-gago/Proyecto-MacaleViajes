@@ -7,6 +7,7 @@
 	outline: none;
 }
 
+
 body{
     height: 100vh;
 }
@@ -183,16 +184,21 @@ footer{
 
 /*Contacto*/
 
+.separation{
+    border-top: 1px solid red;
+    margin-top: 50px;
+}
 .title-contacto{
     text-align: center;
 }
 
 .form__contacto{
-    
     margin-left: 200px;
+    margin-bottom: 50px;
 }
 .form__custom{
-    border: 2px double grey;
+    border: 2px double #da5b4f;
+    border-radius: 10px;
 }
 .form-control{
     margin-bottom: 10px;
@@ -207,6 +213,23 @@ footer{
         margin-left: 0px;
     }
     
+}
+
+.box{
+    text-align:left;
+    font-size: 12px;
+    color: #fff;
+    padding: 0px;
+    margin: 15px 0;
+    background-color: #da5b4f;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 1px #777777;
+    min-height: 117px;
+}
+
+.iconos{
+    display: flex;
+    margin-top: 10px;
 }
 
 

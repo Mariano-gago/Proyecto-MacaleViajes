@@ -1,3 +1,3 @@
-function prueba (){
+/* function prueba (){
     console.log(ciudad);
-}
+} */

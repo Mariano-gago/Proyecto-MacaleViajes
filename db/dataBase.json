@@ -25,8 +25,8 @@
     "texto": "Visita el Imperio Romano",
     "informacion": "Paquete 3 noches",
     "imagen" : {
-        "imagen1":"./imagenes/roma-italia.jpg",
-        "imagen2": "../imagenes/roma300x200.png"
+                "imagen1":"./imagenes/roma-italia.jpg",
+                "imagen2": "../imagenes/roma300x200.png"
     }, 
     "precio": "100.000",
     "region": "Internacional",

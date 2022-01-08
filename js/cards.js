@@ -43,7 +43,7 @@ const cardsHtml = ((resultado, elemento) => {
                         <h6 class="card-subtitle mb-2 text-muted">${destino.subtitulo}</h6>
                         <p class="card-text">${destino.texto}</p>
                         <p class="card-text textBtn">${destino.precio}</p>
-                        <a href="#" class="btn color-btn ">Ver paquete</a>
+                        <button href="#" class="btn color-btn ">Ver paquete</button>
                     </div>
             </div>
         </div>`;
@@ -54,6 +54,12 @@ const cardsHtml = ((resultado, elemento) => {
 
 
 
+
+
+setTimeout(() => {
+    let prueba = document.querySelector(".btn");
+    console.log(prueba);
+},2000);
 
 
 
