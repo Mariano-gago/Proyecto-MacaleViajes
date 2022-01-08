@@ -16,11 +16,11 @@ function db (){
 
 
 //Funcion para filtrar por region y pasar a la funcion "cardsHtml" para mostrar en el HTML
-const filtro = resultado =>{
-    console.log("hola");
+const filtro = (resultado =>{
+    //console.log("hola");
     let resultadoInternacional = resultado.filter( informacion => informacion.region === "Internacional" & informacion.promo === "true");
     cardsHtml(resultadoInternacional, "#cardsHtml"); 
-};
+});
 
 
 
