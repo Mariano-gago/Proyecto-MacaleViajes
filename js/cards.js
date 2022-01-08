@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", db);
 
 //Funcion para recopilar informacion de la base de datos (API)
 function db (){
-    const url = "./db/dataBase.json";
+    const url = "../db/dataBase.json";
 
     fetch(url)
         .then( respuesta => respuesta.json())
@@ -16,10 +16,11 @@ function db (){
 
 
 //Funcion para filtrar por region y pasar a la funcion "cardsHtml" para mostrar en el HTML
-const filtro = ( resultado =>{
+const filtro = resultado =>{
+    console.log("hola");
     let resultadoInternacional = resultado.filter( informacion => informacion.region === "Internacional" & informacion.promo === "true");
     cardsHtml(resultadoInternacional, "#cardsHtml"); 
-});
+};
 
 
 
