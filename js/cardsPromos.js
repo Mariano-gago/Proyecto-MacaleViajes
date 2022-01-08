@@ -5,10 +5,8 @@ const resultadoBusqueda = document.querySelector(".resultado-busqueda");
 
 
 
-// Cuando el DOM esta listo, llamo a la funcion db
-document.addEventListener("DOMContentLoaded", db, filtro);
 
-//Funcion para obtener los datos de la Api (archivo Json);
+/* //Funcion para obtener los datos de la Api (archivo Json);
 function db (){
     const url = "../db/dataBase.json";
                         
@@ -18,7 +16,7 @@ function db (){
         //console.log(resultado);
         filtroRegion(resultado); 
     });
-}
+} */
 
 
 //Filtro para seleccionar por regiones
@@ -96,7 +94,7 @@ function filtro (e) {
 
 
 //Funcion para mostrar lo filtrado
-const cardsFiltrado =  (resultado => {
+const cardsFiltrado =  resultado => {
     //console.log(resultado);
     resultado.forEach(item =>{
         //console.log(item.imagen.imagen1); 
@@ -121,10 +119,12 @@ const cardsFiltrado =  (resultado => {
 
         resultadoBusqueda.appendChild(div);
         })
-}); 
+}; 
 
 // Evento para el input
 inputBuscar.addEventListener("input", filtro);
 
 
+// Cuando el DOM esta listo, llamo a la funcion db
+document.addEventListener("DOMContentLoaded", db(filtroRegion));
 
