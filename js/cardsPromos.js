@@ -67,10 +67,6 @@ const cardsPromos = (ciudad, elemento) => {
 } 
 
 
-
-
-
-
 //Funcion para buscar un producto por el input
 function filtro (e) {
 
