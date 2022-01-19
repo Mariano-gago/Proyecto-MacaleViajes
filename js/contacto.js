@@ -114,13 +114,7 @@ const enviarFormulario = e => {
         spinner.innerHTML = "Enviar";
 
         //Se crea un div para mostrar el mensaje de email enviado
-        /* const divMsje = document.querySelector(".divMsje"); */
-        /* const msjeEnviado = document.createElement("div");
-        msjeEnviado.innerHTML = `
-        <div id:"animacion" class="alert alert-success " role="alert">
-            Consulta enviada con exito!
-        </div>`
-        divMsje.appendChild(msjeEnviado); */
+        
         $(".divMsje").fadeIn(3000).fadeOut(3000).append(`
         <div>
             <div class=" alert alert-success " role="alert">

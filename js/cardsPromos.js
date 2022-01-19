@@ -5,22 +5,8 @@ const resultadoBusqueda = document.querySelector(".resultado-busqueda");
 
 
 
-
-/* //Funcion para obtener los datos de la Api (archivo Json);
-function db (){
-    const url = "../db/dataBase.json";
-                        
-    fetch(url)
-        .then( respuesta => respuesta.json())
-        .then( resultado => {
-        //console.log(resultado);
-        filtroRegion(resultado); 
-    });
-} */
-
-
 //Filtro para seleccionar por regiones
-const filtroRegion = ( resultado =>{
+const filtroRegion = resultado =>{
 
     let resultadoNacional = resultado.filter( region => region.region === "Nacional");
     let resultadoInternacional = resultado.filter( region => region.region === "Internacional");
@@ -32,7 +18,7 @@ const filtroRegion = ( resultado =>{
     }else if (window.location.pathname.includes("nacionales")){
         cardsPromos(resultadoNacional, "#cardsNacionales");
     };
-});
+};
 
 
 //Muestro en el HTML las cards
@@ -72,13 +58,12 @@ function filtro (e) {
 
     const input = e.target.value.toLowerCase();
 
-    const url = "../db/dataBase.json";
+    const url = "https://mariano-gago.github.io/Proyecto-MacaleViajes/db/dataBase.json";
 
     fetch(url)
         .then( respuesta => respuesta.json())
         .then( resultado => {
-        console.log(resultado);
-        //prueba(resultado)
+        //console.log(resultado);
         let resultadoNacional = resultado.filter( nombre => nombre.nombre.toLowerCase() === input);
         let resultadoInternacional = resultado.filter( nombre => nombre.nombre.toLowerCase() === input);
         cardsFiltrado(resultadoNacional);

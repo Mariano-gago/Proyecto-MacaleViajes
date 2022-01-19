@@ -1,6 +1,6 @@
 
 //Funcion para filtrar por region y pasar a la funcion "cardsHtml" para mostrar en el HTML
-const filtro = resultado =>{
+const region = resultado =>{
     let resultadoInternacional = resultado.filter( informacion => informacion.region === "Internacional" & informacion.promo === "true");
     cardsHtml(resultadoInternacional, "#cardsHtml"); 
 };
@@ -9,7 +9,7 @@ const filtro = resultado =>{
 
 
 //Funcion para mostrar las cards en el HTML
-const cardsHtml = ((resultado, elemento) => {
+const cardsHtml = (resultado, elemento) => {
     const cardDiv = document.querySelector(elemento);
     //console.log(cardDiv);
     cardDiv.innerHTML = "";
@@ -32,18 +32,15 @@ const cardsHtml = ((resultado, elemento) => {
         </div>`;
         cardDiv.appendChild(div);
     });
-});
+};
 
 // Evento para detectar cuando esta listo el DOM
-document.addEventListener("DOMContentLoaded", db(filtro));
+document.addEventListener("DOMContentLoaded", db(region));
 
 
 
 
-/* setTimeout(() => {
-    let prueba = document.querySelector(".btn");
-    console.log(prueba);
-},2000); */
+
 
 
 

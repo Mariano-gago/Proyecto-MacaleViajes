@@ -1,3 +1,6 @@
+
+//Funcion para obtener datos del JSON
+
 function db (callback){
     const url = "https://mariano-gago.github.io/Proyecto-MacaleViajes/db/dataBase.json";
     fetch(url)

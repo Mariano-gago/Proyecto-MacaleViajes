@@ -74,5 +74,3 @@ const showMiViaje = ()=> {
                     <li>Cantidad de Personas: ${resultadoMiViaje.personas}</li>`;
     miViaje.appendChild(div);
 }
-
-//console.log(resultadoMiViaje);
